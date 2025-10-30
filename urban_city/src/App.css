@@ -1,0 +1,26 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Apply dark background and white text globally */
+@layer base {
+  body {
+    @apply bg-gray-900 text-white;
+  }
+}
+
+/* Custom classes for optional animations or overrides */
+@layer utilities {
+  /* Logo spin animation if you keep a logo */
+  @keyframes spin-slow {
+    from {
+      transform: rotate(0deg);
+    }
+    to {
+      transform: rotate(360deg);
+    }
+  }
+  .spin-slow {
+    animation: spin-slow 20s linear infinite;
+  }
+}

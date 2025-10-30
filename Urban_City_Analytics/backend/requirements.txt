@@ -1,0 +1,14 @@
+fastapi==0.115.0
+uvicorn[standard]==0.30.6
+pydantic==2.9.2
+python-multipart==0.0.9
+pandas==2.2.2
+scikit-learn==1.5.2
+folium==0.17.0
+branca==0.7.2
+requests==2.32.3
+pytest==8.3.3
+joblib
+numpy
+python-multipart
+

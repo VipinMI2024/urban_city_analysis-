@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Urban City Analytics</title>
+  <script src="https://cdn.jsdelivr.net/npm/react@18.2.0/umd/react.development.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/react-dom@18.2.0/umd/react-dom.development.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@babel/standalone@7.21.4/Babel.min.js"></script>
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gray-900">
+  <div id="root"></div>
+  <script type="text/babel">
+    function App() {
+      const openMap = () => {
+        window.open("https://www.google.com/maps/place/Pune", "_blank");
+      };
+
+      const refreshData = () => {
+        alert("Refreshing latest Pune city analytics data...");
+      };
+
+      return (
+        <div className="min-h-screen text-white">
+          {/* Sticky Navbar */}
+          <div className="bg-gray-800 shadow-md p-4 flex justify-between items-center sticky top-0 z-50">
+            <h1 className="text-2xl font-bold">Urban City Analytics</h1>
+            <div className="space-x-4">
+              <button onClick={openMap} className="bg-blue-600 hover:bg-blue-700 px-4 py-2 rounded">
+                View Map
+              </button>
+              <button onClick={refreshData} className="bg-green-600 hover:bg-green-700 px-4 py-2 rounded">
+                Refresh Data
+              </button>
+            </div>
+          </div>
+
+          {/* Main Content */}
+          <div className="flex flex-col items-center px-6 mt-8">
+            <p className="text-lg text-gray-300 max-w-3xl text-center mb-8">
+              Welcome to Pune City Analytics — your one-stop dashboard for insights 
+              into population growth, infrastructure, air quality, traffic, and economic trends.
+            </p>
+
+            <div className="grid grid-cols-1 md:grid-cols-3 gap-6 w-full max-w-6xl">
+              <div className="bg-gray-800 p-6 rounded-lg shadow hover:shadow-lg transition hover:scale-105">
+                <h2 className="text-xl font-semibold mb-2">Population</h2>
+                <p className="text-gray-400">
+                  Pune's population continues to grow, with urban expansion 
+                  shaping the city's future.
+                </p>
+              </div>
+
+              <div className="bg-gray-800 p-6 rounded-lg shadow hover:shadow-lg transition hover:scale-105">
+                <h2 className="text-xl font-semibold mb-2">Air Quality</h2>
+                <p className="text-gray-400">
+                  Track AQI levels to ensure sustainable development and healthier living.
+                </p>
+              </div>
+
+              <div className="bg-gray-800 p-6 rounded-lg shadow hover:shadow-lg transition hover:scale-105">
+                <h2 className="text-xl font-semibold mb-2">Traffic</h2>
+                <p className="text-gray-400">
+                  Analyze congestion patterns to improve mobility and reduce commute times.
+                </p>
+              </div>
+
+              <div className="bg-gray-800 p-6 rounded-lg shadow hover:shadow-lg transition hover:scale-105">
+                <h2 className="text-xl font-semibold mb-2">Infrastructure</h2>
+                <p className="text-gray-400">
+                  Monitor development projects and ensure sustainable city planning.
+                </p>
+              </div>
+
+              <div className="bg-gray-800 p-6 rounded-lg shadow hover:shadow-lg transition hover:scale-105">
+                <h2 className="text-xl font-semibold mb-2">Economy</h2>
+                <p className="text-gray-400">
+                  Track economic growth indicators, job markets, and investments in Pune.
+                </p>
+              </div>
+            </div>
+          </div>
+
+          {/* Footer */}
+          <footer className="bg-gray-800 text-gray-400 text-center py-4 mt-10">
+            © 2025 Urban City Analytics | Built with React & TailwindCSS
+          </footer>
+        </div>
+      );
+    }
+
+    ReactDOM.render(<App />, document.getElementById("root"));
+  </script>
+</body>
+</html>
