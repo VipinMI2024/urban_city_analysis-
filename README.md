@@ -1,4 +1,4 @@
-# 🏙️ Urban City Analysis
+# Urban City Analysis
 
 **Author:** Vipin Mishra  
 **Project Type:** Predictive Analysis for Sustainable Urban Development  
@@ -8,21 +8,21 @@
 
 ---
 
-## 🌍 Project Overview
-The **Urban City Analysis** project focuses on leveraging data science and API-driven spatial analysis to understand and predict urban development patterns.  
-By integrating **real-time city data** from the Overpass Turbo API with **health and demographic datasets**, the project aims to identify trends influencing urban sustainability, infrastructure efficiency, and citizen well-being.
+## Project Overview
+The Urban City Analysis project focuses on leveraging data science and API-driven spatial analysis to understand and predict urban development patterns.  
+By integrating real-time city data from the Overpass Turbo API with health and demographic datasets, the project aims to identify trends influencing urban sustainability, infrastructure efficiency, and citizen well-being.
 
 ---
 
-## 🎯 Objectives
-- Analyze spatial and demographic data to assess urban sustainability.
-- Predict high-risk or underdeveloped city zones using machine learning models.
-- Visualize infrastructure density, population patterns, and environmental metrics.
-- Combine **health data** (Brain Stroke CT dataset) with urban indicators to explore the relationship between city conditions and public health outcomes.
+## Objectives
+- Analyze spatial and demographic data to assess urban sustainability.  
+- Predict high-risk or underdeveloped city zones using machine learning models.  
+- Visualize infrastructure density, population patterns, and environmental metrics.  
+- Combine health data (Brain Stroke CT dataset) with urban indicators to explore the relationship between city conditions and public health outcomes.
 
 ---
 
-## ⚙️ Tech Stack
+## Tech Stack
 - **Language:** Python  
 - **Tools & Libraries:** Pandas, NumPy, Matplotlib, Seaborn, Scikit-learn, Folium, Requests, JSON  
 - **APIs:** Overpass Turbo (OpenStreetMap data)  
@@ -30,9 +30,9 @@ By integrating **real-time city data** from the Overpass Turbo API with **health
 
 ---
 
-## 📊 Methodology
+## Methodology
 1. **Data Collection:**  
-   - Extracted geospatial data via Overpass Turbo API (e.g., roads, buildings, green areas).  
+   - Extracted geospatial data via Overpass Turbo API (roads, buildings, green areas).  
    - Integrated health and demographic datasets for cross-domain insights.  
 
 2. **Data Cleaning & Preprocessing:**  
@@ -53,15 +53,15 @@ By integrating **real-time city data** from the Overpass Turbo API with **health
 
 ---
 
-## 💡 Key Findings
+## Key Findings
 - Strong correlation between healthcare accessibility and city population density.  
 - Urban areas with lower greenery index show higher predicted health risks.  
-- Predictive models achieved **~86% accuracy** in identifying high-risk zones.  
-- Overpass Turbo integration allowed **real-time map visualization** of analyzed city sectors.  
+- Predictive models achieved approximately 86% accuracy in identifying high-risk zones.  
+- Overpass Turbo integration enabled real-time map visualization of analyzed city sectors.  
 
 ---
 
-## 🧩 Files in This Repository
+## Files in This Repository
 - `urban_city_analysis.ipynb` – Main Jupyter notebook with code and visualizations  
 - `data/` – Contains datasets used for analysis  
 - `plots/` – Generated charts and map visuals  
@@ -69,14 +69,14 @@ By integrating **real-time city data** from the Overpass Turbo API with **health
 
 ---
 
-## 📈 Future Scope
+## Future Scope
 - Integrate satellite imagery for enhanced spatial predictions.  
 - Develop a Streamlit dashboard for interactive urban analytics.  
 - Incorporate live IoT or weather data streams for real-time monitoring.
 
 ---
 
-## 📚 References
+## References
 - [Overpass Turbo API Documentation](https://overpass-turbo.eu/)  
 - [OpenStreetMap](https://www.openstreetmap.org/)  
 - [Brain Stroke CT Dataset – Kaggle](https://www.kaggle.com/)  
